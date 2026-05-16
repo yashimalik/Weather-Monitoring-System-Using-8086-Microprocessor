@@ -1,9 +1,9 @@
-Weather Monitoring System Using 8086 Microprocessor
+**Weather Monitoring System Using 8086 Microprocessor**
 
 A hardware-software system built around the Intel 8086 microprocessor that reads and displays real-time temperature, humidity, and atmospheric pressure using an ADC, three LCD displays, and interrupt-driven timing logic programmed entirely in x86 Assembly.
 
 
-Features
+**Features**
 
 - Reads three sensor channels (temperature, humidity, pressure) via an ADC with multiplexed channel selection
 - Displays live readings on three independent 16x2 LCD screens
@@ -13,7 +13,7 @@ Features
 - Sensor scaling: temperature (-50 to 50 C), humidity (0-99%), pressure (0.4-1.1 Bar)
 
 
-Hardware Components
+**Hardware Components**
 
 - Intel 8086 Microprocessor
 - 8259 Programmable Interrupt Controller (PIC)
@@ -23,7 +23,7 @@ Hardware Components
 - 3x 16x2 LCD displays
 
 
-Interrupt Structure
+**Interrupt Structure**
 
 - ISR0 (Button)     — sets an update flag for immediate sensor read
 - ISR1 (5-minute)   — triggers ADC conversion for all three sensor channels
@@ -31,12 +31,12 @@ Interrupt Structure
 - ISR3 (EOC)        — reads ADC output on End-of-Conversion signal and stores the value
 
 
-Tools
+**Tools**
 
 - x86 Assembly
 - EMU8086 (Emulator/Simulator)
 
 
-Note
+**Note**
 
 Hardware design and circuit documentation are available in Manuals/Hardware_design.pdf. Full project report is in Manuals/MUP Group Project.pdf.
